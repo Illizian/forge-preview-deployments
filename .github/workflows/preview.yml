@@ -4,10 +4,7 @@ on:
   pull_request:
 
 jobs:
-  deploy:
-    runs-on: lorisleiva/laravel-docker
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
     steps:
-      - name: "Deploy Preview"
-        run: |
-          composer global require ryangjchandler/forge-previewer && \
-          forge-previewer
+      - run: echo "🎉 The job was automatically triggered"
