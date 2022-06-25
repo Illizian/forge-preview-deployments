@@ -1,0 +1,14 @@
+name: Deploy Preview Deployment
+
+on:
+  pull_request:
+
+jobs: deploy
+  runs_on: lorisleiva/laravel-docker
+  steps:
+    - name: 'Deploy Preview'
+      run: |
+        composer global require ryangjchandler/forge-previewer && \
+        forge-previewer
+
+
