@@ -8,4 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     container: lorisleiva/laravel-docker
     steps:
-      - run: echo "🎉 The job was automatically triggered"
+      - name: "Deploy Preview"
+        run: |
+          composer global require ryangjchandler/forge-previewer && \
+          forge-previewer
