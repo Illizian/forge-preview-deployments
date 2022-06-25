@@ -11,4 +11,4 @@ jobs:
       - name: "Deploy Preview"
         run: |
           composer global require ryangjchandler/forge-previewer && \
-          forge-previewer
+          ./root/.composer/vendor/bin/forge-previewer
