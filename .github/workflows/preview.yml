@@ -5,6 +5,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: lorisleiva/laravel-docker
+    runs-on: ubuntu-latest
+    container: lorisleiva/laravel-docker
     steps:
       - run: echo "🎉 The job was automatically triggered"
