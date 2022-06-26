@@ -11,5 +11,7 @@ jobs:
       - name: "Deploy Preview"
         run: |
           composer config --global --list
+          ls -al ~
+          ls -al ~/.composer
           ls -al ~/.composer/vendor
           ls -al ~/.composer/vendor/bin
