@@ -6,12 +6,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    container: lorisleiva/laravel-docker
     steps:
       - name: "Deploy Preview"
         run: |
           composer config --global --list
-          ls -al ~
-          ls -al ~/.composer
-          ls -al ~/.composer/vendor
-          ls -al ~/.composer/vendor/bin
