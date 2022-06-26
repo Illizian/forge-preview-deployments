@@ -10,5 +10,6 @@ jobs:
     steps:
       - name: "Deploy Preview"
         run: |
-          composer global require ryangjchandler/forge-previewer
-          forge-previewer
+          composer config --global --list
+          ls -al ~/.composer/vendor
+          ls -al ~/.composer/vendor/bin
