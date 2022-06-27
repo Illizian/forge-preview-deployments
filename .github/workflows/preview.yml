@@ -28,7 +28,10 @@ jobs:
       - name: Set Test Output
         id: deploy
         run: |
-          echo "::set-output name=domain::${{ github.head_ref }}.${{ secrets.FORGE_PREVIEW_DOMAIN }}"
+          echo "Testing, random content aside the set-output echo"
+          echo "some more content"
+          echo "::set-output name=domain::https://${{ github.head_ref }}.${{ secrets.FORGE_PREVIEW_DOMAIN }}/"
+          echo "some more content"
 
       - name: Comment PR
         uses: thollander/actions-comment-pull-request@v1
