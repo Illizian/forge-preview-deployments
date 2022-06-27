@@ -1,0 +1,14 @@
+{
+    "name": "illizian/forge-preview-deployments",
+    "autoload": {
+        "psr-4": {
+            "Illizian\\ForgePreviewDeployments\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "illizian"
+        }
+    ],
+    "require": {}
+}
